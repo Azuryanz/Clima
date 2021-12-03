@@ -17,16 +17,19 @@ Uma vez que o projeto utiliza apenas de HTML, CSS e JavaScript, basta o usuário
 
 ### Fazendo uma busca
 ![Busca](assets/images/busca.png)
+
 Para iniciar uma busca, o usuário deve digitar o **nome de uma cidade** no campo de busca, e em seguida deve **apertar** o botão *Buscar* ou **pressionar** a tecla *enter* em seu teclado.
 
 ### Busca bem sucedida
 ![Clima](assets/images/clima.png)
+
 Caso o usuário insira uma cidade **válida**, será retornado para a tela um card contendo diversas informações sobre a cidade em questão.
 
 para buscar informações do clima de outra cidade, basta repetir o processo.
 
 ### Busca falha
 ![Falha](assets/images/falha.png)
+
 Caso o usuário tenha inserido uma cidade **inválida**, nenhum card será exibido, mas apenas a mensagem de erro.
 
 ### Buscas na API
