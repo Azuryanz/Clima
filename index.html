@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <title>Clima</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Clima</h1>
+      <form class="search">
+        <input type="text" name="local" id="local" placeholder="Insira uma cidade...">
+        <button class="btn">Buscar</button>
+      </form>
+      <div class="info">
+        <div class="info-local">Cidade, PAÍS</div>
+        <div class="info-conditions">
+          <div class="wrapper" id="wind">
+            <div class="info-section">Vento</div>
+            <div class="display">
+              <div class="info-data">--.--</div>
+              <div class="info-symbol low">Km/h</div>
+            </div>
+            <div class="wind-wrapper">
+              <div class="wind">
+                <div class="vertical">
+                  <div>N</div>
+                  <div>S</div>
+                </div>
+                <div class="horizontal">
+                  <div>O</div>
+                  <div>L</div>
+                </div>
+                <div class="direction"></div>
+                <div class="ring"></div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper" id="temp">
+            <div class="info-section">Temperatura</div>
+            <div class="display">
+              <div class="info-data">--.--</div>
+              <div class="info-symbol high">°C</div>
+            </div>
+            <div class="temp-wrapper">
+              <div class="temp-max">
+                <div class="max-label">Máxima</div>
+                <div class="max-value"> --.-- <sup>°C</sup> </div>
+              </div>
+              <div class="thermometer">
+                <div class="base"></div>
+                <input type="range" name="thermo" id="thermo" min="-60" max="60" value="0">
+              </div>
+              <div class="temp-min">
+                <div class="min-label">Mínima</div>
+                <div class="min-value"> --.-- <sup>°C</sup> </div>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper" id="humidity">
+            <div class="info-section">Umidade do ar</div>
+            <div class="display">
+              <div class="info-data">--.--</div>
+              <div class="info-symbol low">%</div>
+            </div>
+            <div class="humidity-wrapper">
+              <img src="assets/images/air-humidity.png" alt="">
+              <input type="range" name="air-humidity" id="air-humidity" min="0" max="100" value="100">
+            </div>
+          </div>
+        </div>
+        <div class="extra-info">
+          <img id="weather" src="https://openweathermap.org/img/wn/10d@2x.png" alt="icon">
+          <div class="extra-info-text">
+            <p class="desc">Descrição</p>
+            <p class="regular-text">Atualmente é dia em local, com uma sensação térmica de --.-- <sup>°C</sup> </p>
+          </div>
+        </div>
+      </div>
+      <div class="warning"></div>
+    </div>
+    <footer>
+      <p>Criado por Azuryanz <br> seguindo o <a href="https://alunos.b7web.com.br/curso/javascript/d7js-projeto-3-clima" target="blank">modelo da B7Web</a></p>
+    </footer>
+    <script src="assets/scripts/script.js"></script>
+  </body>
+</html>
